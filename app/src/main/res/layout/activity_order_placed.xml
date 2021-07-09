@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".order_placed"
+    android:background="@drawable/bg1">
+
+    <include layout="@layout/placed_toolbar"></include>
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:ignore="MissingConstraints">
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your Order is placed  "
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        tools:ignore="MissingConstraints"></TextView>
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" We will contact you  "
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        tools:ignore="MissingConstraints"></TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Thanks :)  "
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        tools:ignore="MissingConstraints"></TextView>
+
+</LinearLayout>
+</RelativeLayout>

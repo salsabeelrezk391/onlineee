@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragments.AccountFragment"
+    android:background="@drawable/baby_blue_back">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+
+    <include layout="@layout/account_toolbar"
+        android:id="@+id/account_toolbar"/>
+
+    <TextView
+        android:id="@+id/welcome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/account_toolbar"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="15dp"
+        android:text="Welcome!"
+        android:textSize="25sp"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/enter_account"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/welcome"
+        android:layout_margin="15dp"
+        android:text=" please Enter your Account"
+        android:textSize="25sp"
+        android:textStyle="italic" />
+
+
+
+        <Button
+            android:id="@+id/sign_in_btn"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_below="@+id/enter_account"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="100dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/button_shape"
+            android:backgroundTint="@color/gray"
+            android:text="Sign In"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="25dp"
+            android:textStyle="italic" />
+
+        <Button
+            android:id="@+id/sign_up_btn"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_below="@+id/sign_in_btn"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/button_shape"
+            android:backgroundTint="@color/gray"
+            android:text="Sign up"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="25dp"
+            android:textStyle="italic" />
+    </RelativeLayout>
+
+
+</FrameLayout>

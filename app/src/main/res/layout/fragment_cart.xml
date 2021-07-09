@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragments.CartFragment"
+    android:orientation="horizontal">
+  <include layout="@layout/cart_toolbar"
+      android:id="@+id/cart_tool"/>
+
+  <LinearLayout
+      android:orientation="vertical"
+      android:layout_margin="8dp"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_below="@+id/cart_tool">
+
+  <LinearLayout
+      android:orientation="horizontal"
+      android:layout_margin="8dp"
+      android:layout_width="match_parent"
+      android:layout_marginTop="20dp"
+      android:layout_height="wrap_content"
+      android:layout_below="@+id/cart_tool">
+
+    <ImageView
+        android:id="@+id/img_cart_pro"
+        android:layout_height="140dp"
+        android:layout_width="140dp"
+        android:src="@drawable/laptop4"
+        >
+      ></ImageView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical"
+        android:layout_marginLeft="30dp"
+        >
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:textSize="22dp"
+          android:textStyle="bold"
+          android:text="Labtop5">
+      </TextView>
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:textSize="22dp"
+          android:textStyle="bold"
+          android:text="9000 EPG">
+      </TextView>
+      <RelativeLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+
+          >
+
+        <com.cepheuen.elegantnumberbutton.view.ElegantNumberButton
+            android:layout_width="70dp"
+            android:layout_height="30dp"
+            android:id="@+id/txt_count"
+            android:layout_alignParentRight="true"
+            android:background="#2196F3"
+            ></com.cepheuen.elegantnumberbutton.view.ElegantNumberButton>
+      </RelativeLayout>
+    </LinearLayout>
+  </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_margin="8dp"
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cart_tool">
+
+      <ImageView
+          android:layout_height="140dp"
+          android:layout_width="140dp"
+          android:src="@drawable/printer7"
+          >
+        ></ImageView>
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="30dp"
+          android:orientation="vertical"
+          android:layout_marginLeft="30dp"
+          >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="22dp"
+            android:textStyle="bold"
+            android:text="Printer4">
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="22dp"
+            android:textStyle="bold"
+            android:text="4000 EPG">
+        </TextView>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            >
+
+          <com.cepheuen.elegantnumberbutton.view.ElegantNumberButton
+              android:layout_width="70dp"
+              android:layout_height="30dp"
+              android:layout_alignParentRight="true"
+              android:background="#2196F3"
+              ></com.cepheuen.elegantnumberbutton.view.ElegantNumberButton>
+        </RelativeLayout>
+      </LinearLayout>
+    </LinearLayout>
+
+  <EditText
+      android:id="@+id/edt_comment"
+      android:hint="comment"
+      android:lines="1"
+      android:minLines="2"
+      android:inputType="textMultiLine"
+      android:layout_margin="8dp"
+      android:padding="5dp"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"></EditText>
+
+
+
+
+
+  </LinearLayout>
+  <Button
+      android:id="@+id/conf_button"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="CONFIRM ORDER"
+      android:textSize="25dp"
+      android:layout_marginBottom="10dp"
+      android:layout_alignParentBottom="true"
+      android:layout_marginLeft="20dp"
+      android:layout_marginRight="20dp"
+      ></Button>
+
+</RelativeLayout>
+
+

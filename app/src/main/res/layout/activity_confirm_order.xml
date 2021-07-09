@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ConfirmOrderActivity"
+    android:orientation="vertical"
+    android:background="@drawable/bg1">
+
+
+    <include layout="@layout/conf_order_toolbar"
+        android:id="@+id/id_order"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_margin="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/id_order"
+        android:padding="10dp">
+
+    <LinearLayout
+    android:layout_marginTop="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+        android:padding="10dp"
+        android:outlineSpotShadowColor="@color/colorWhite"
+    >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2 items in cart for 13000 EPG"
+        android:layout_marginTop="20dp"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
+        tools:ignore="MissingConstraints"></TextView>
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delivery price may vary depinding on your adress "
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
+        tools:ignore="MissingConstraints"></TextView>
+
+
+</LinearLayout>
+
+
+    <EditText
+        android:layout_marginTop="10dp"
+        android:id="@+id/edt_comment"
+        android:drawableLeft="@drawable/add"
+        android:hint="Add Your Adress"
+        android:drawablePadding="15dp"
+        android:lines="1"
+        android:minLines="2"
+        android:inputType="textMultiLine"
+        android:layout_margin="8dp"
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></EditText>
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/placed_order"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Place ORDER"
+        android:textSize="25dp"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        ></Button>
+
+
+
+</RelativeLayout>
+

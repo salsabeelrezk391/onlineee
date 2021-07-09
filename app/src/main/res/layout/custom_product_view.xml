@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/gray">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="8dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@color/white">
+
+            <ImageView
+                android:id="@+id/product_image"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:padding="5dp"
+                app:srcCompat="@drawable/ic_launcher_background"
+                tools:ignore="VectorDrawableCompat"
+
+                />
+
+            <TextView
+                android:id="@+id/product_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="41dp"
+                android:layout_toRightOf="@+id/product_image"
+                android:text="product_name"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/product_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/product_name"
+                android:layout_marginLeft="26dp"
+                android:layout_marginTop="0dp"
+                android:layout_toRightOf="@+id/product_image"
+                android:text="product_price"
+                android:textAllCaps="true"
+                android:textSize="20sp"
+                android:textStyle="normal" />
+
+            <Button
+                android:id="@+id/add_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/product_price"
+                android:layout_marginLeft="65dp"
+                android:layout_marginTop="28dp"
+                android:layout_toRightOf="@+id/product_image"
+                android:background="@drawable/button_shape"
+                android:text="ADD"
+                android:textColor="@color/black"
+                app:backgroundTint="#E1E2E6" />
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
