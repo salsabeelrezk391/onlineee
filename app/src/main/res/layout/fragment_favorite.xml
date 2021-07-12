@@ -7,15 +7,20 @@
     tools:context=".Fragments.CartFragment"
     android:orientation="horizontal"
     android:background="@drawable/bg1">
-    <include layout="@layout/cart_toolbar"
-        android:id="@+id/cart_tool"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <include layout="@layout/favorite_toolbar"
+        android:id="@+id/fav_tool"/>
 
     <LinearLayout
         android:orientation="vertical"
         android:layout_margin="8dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/cart_tool">
+        android:layout_below="@+id/fav_tool">
 
         <LinearLayout
             android:orientation="horizontal"
@@ -158,6 +163,6 @@
         </LinearLayout>
 
     </LinearLayout>
-
+    </LinearLayout>
 
 </RelativeLayout>
