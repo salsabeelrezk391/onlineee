@@ -60,9 +60,11 @@
           >
 
         <com.cepheuen.elegantnumberbutton.view.ElegantNumberButton
+            android:id="@+id/num_1"
+            app:initialNumber="1"
+            app:finalNumber="10"
             android:layout_width="70dp"
             android:layout_height="30dp"
-            android:id="@+id/txt_count"
             android:layout_alignParentRight="true"
             android:background="#2196F3"
             ></com.cepheuen.elegantnumberbutton.view.ElegantNumberButton>
@@ -113,11 +115,14 @@
             >
 
           <com.cepheuen.elegantnumberbutton.view.ElegantNumberButton
+              android:id="@+id/num_2"
+              app:initialNumber="1"
+              app:finalNumber="10"
               android:layout_width="70dp"
               android:layout_height="30dp"
               android:layout_alignParentRight="true"
               android:background="#2196F3"
-              ></com.cepheuen.elegantnumberbutton.view.ElegantNumberButton>
+              tools:ignore="DuplicateIds"></com.cepheuen.elegantnumberbutton.view.ElegantNumberButton>
         </RelativeLayout>
       </LinearLayout>
     </LinearLayout>
@@ -140,6 +145,7 @@
   </LinearLayout>
   <Button
       android:id="@+id/conf_button"
+      android:onClick="OnClicked"
       android:layout_width="match_parent"
       android:layout_height="wrap_content"
       android:text="CONFIRM ORDER"

@@ -2,7 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     package="com.example.itegy">
-
+<uses-permission android:name="android.permission.SET_DEBUG_APP"
+    tools:ignore="ProtectedPermissions" />
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -11,8 +12,6 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Itegy"
         tools:replace="android:theme">
-        <activity android:name=".order_placed"></activity>
-        <activity android:name=".ConfirmOrderActivity" />
         <activity android:name=".CdActivity" />
         <activity android:name=".HarddiskActivity" />
         <activity android:name=".PrinterActivity" />

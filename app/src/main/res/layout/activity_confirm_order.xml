@@ -6,7 +6,8 @@
     android:layout_height="match_parent"
     tools:context=".ConfirmOrderActivity"
     android:orientation="vertical"
-    android:background="@drawable/bg1">
+    android:background="@drawable/bg1"
+    android:id="@+id/conflayout">
 
 
     <include layout="@layout/conf_order_toolbar"
@@ -70,6 +71,7 @@
 
     <Button
         android:id="@+id/placed_order"
+        android:onClick="conClick"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Place ORDER"

@@ -2,7 +2,6 @@ package com.example.itegy;
 
 import android.os.Bundle;
 import android.view.MenuItem;
-import android.view.View;
 import android.widget.FrameLayout;
 
 import androidx.annotation.NonNull;
@@ -52,12 +51,8 @@ public class HomeActivity extends AppCompatActivity {
 
 
                 case id.cart:
-                    selectFragment = new CartFragment() {
-                        @Override
-                        public void onClick(View v) {
+                    selectFragment = new CartFragment();
 
-                        }
-                    };
                     break;
 
                 case id.favorite:
@@ -65,6 +60,7 @@ public class HomeActivity extends AppCompatActivity {
                     break;
 
 
+                default:
 
             }
             getSupportFragmentManager().beginTransaction().replace(id.framelayout, selectFragment).commit();

@@ -1,8 +1,8 @@
 package com.example.itegy;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class order_placed extends AppCompatActivity {
 
